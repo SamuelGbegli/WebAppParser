@@ -1,0 +1,34 @@
+{
+"abstract_method": [
+{
+"name": "authenticateUser",
+"access": "public",
+"parameters": [
+{
+"var": "account",
+"type": "String"
+},
+{
+"var": "password",
+"type": "String"
+}
+],
+"exceptions": [
+"RemoteException",
+"SecurityException"
+],
+"return": "boolean"
+},
+{
+"name": "verifyUser",
+"access": "public",
+"parameters": [
+{
+"var": "link",
+"type": "URL"
+}
+],
+"return": "void"
+}
+]
+}

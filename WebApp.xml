@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface id="RESTInterface">
+	      <package>uk.ac.le.cs.CO3102</package>
+			<superclass>
+				<class>Remote</class>
+			</superclass>
+			<include>java.rmi.Remote</include>
+			<include>java.rmi.RemoteException</include>	
+			<include>java.net.*</include>			
+			<abstract_method name="authenticateUser">
+				<access>public</access>
+				<parameters>
+					<argument type="String">account</argument>
+					<argument type="String">password</argument>	
+				</parameters>
+				<throws>
+					<exception>RemoteException</exception>
+					<exception>SecurityException</exception>
+				</throws>
+				<return>boolean</return>
+			</abstract_method>
+			<abstract_method name="verifyUser">
+				<access>public</access>
+				<parameters>
+					<argument type="URL">link</argument>
+				</parameters>
+				<return>void</return>
+			</abstract_method>
+</interface>
